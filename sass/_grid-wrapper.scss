@@ -1,0 +1,18 @@
+// Creates a wrapper for a series of columns
+@mixin make-row($gutter: $grid-gutter-width) {
+    margin-left: ceil(($gutter / -2));
+    margin-right: floor(($gutter / -2));
+    position: relative;
+    &:after,
+    &:before {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.grid-row{
+    @include make-row;
+}

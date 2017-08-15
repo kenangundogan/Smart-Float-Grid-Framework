@@ -1,0 +1,49 @@
+// grid property
+%grid-property {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+// grid type,size list
+$grid-type-list: (xs, $screen-xs),(sm, $screen-sm),(md, $screen-md),(mdl, $screen-mdl),(lg, $screen-lg);
+
+
+// make all-size grid
+@each $item, $grid-type in $grid-type-list {
+    @for $i from 1 through $grid-columns {
+        .#{$grid-name}-#{$item}-#{$i} { @extend %grid-property; }
+    }
+}
+
+
+// make grid function
+@mixin make-grid($item){
+    @for $i from 1 through $grid-columns {
+        .#{$grid-name}-#{$item}-#{$i} {
+            width: (100% / $grid-columns) * $i;
+            float: left;
+        }
+    }
+}
+
+
+// make scren-size grid
+@each $item, $screen-size in $grid-type-list {
+    @if ($item!="xs") {
+        @media (min-width: $screen-size) {
+            @include make-grid($item);
+        }
+    }
+    @else{
+        @include make-grid($item);
+    }
+}
+
+
+
+
+
+
+
