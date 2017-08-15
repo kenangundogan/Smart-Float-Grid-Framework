@@ -1,7 +1,7 @@
 # Grid Framework (Sass/Scss/Css)
 
 
-Grid Screen Size (-xs-sm-md-lg-xl)
+## Grid Screen Size (-xs-sm-md-lg-xl)
 
 | Screen Size        | < 424px          | < 768px         | < 1024px        | < 1279px        | < 1366px        |
 | :----------------- |:----------------:|----------------:|----------------:|----------------:|----------------:|
@@ -17,3 +17,70 @@ Grid Screen Size (-xs-sm-md-lg-xl)
 | 83.33333%          | grid-xs-10       | grid-sm-10      | grid-md-10      | grid-lg-10      | grid-xl-10      |
 | 91.66667%          | grid-xs-11       | grid-sm-11      | grid-md-11      | grid-lg-11      | grid-xl-11      |
 | 100%               | grid-xs-12       | grid-sm-12      | grid-md-12      | grid-lg-12      | grid-xl-12      |
+
+
+## Example 1
+
+```javascript
+  <div class="grid-row">
+    <div class="grid-sm-4 mb-20">.grid-sm-4</div>
+    <div class="grid-sm-4 mb-20">.grid-sm-4</div>
+    <div class="grid-sm-4 mb-20">.grid-sm-4</div>
+    <div class="grid-sm-4 mb-20">.grid-sm-4</div>
+    <div class="grid-sm-8 mb-20">.grid-sm-8</div>
+    <div class="grid-sm-3 mb-20">.grid-sm-3</div>
+    <div class="grid-sm-3 mb-20">.grid-sm-3</div>
+    <div class="grid-sm-3 mb-20">.grid-sm-3</div>
+    <div class="grid-sm-3 mb-20">.grid-sm-3</div>
+  </div>
+```
+
+
+## Example 2
+
+```javascript
+  <div class="grid-row">
+    <div class="grid-xs-12 grid-sm-4 mb-20">.grid-sm-4</div>
+    <div class="grid-xs-12 grid-sm-4 mb-20">.grid-sm-4</div>
+    <div class="grid-xs-12 grid-sm-4 mb-20">.grid-sm-4</div>
+    <div class="grid-xs-12 grid-sm-4 mb-20">.grid-sm-4</div>
+    <div class="grid-xs-12 grid-sm-4 mb-20">.grid-sm-4</div>
+    <div class="grid-xs-12 grid-sm-4 mb-20">.grid-sm-4</div>
+  </div>
+```
+
+## Example 3
+
+```javascript
+  <div class="grid-row">
+      <div class="grid-xs-12 grid-sm-4 two">
+          <div class="grid-row">
+              <div class="grid-xs-12 mb-20">.grid-sm-12</div>
+              <div class="grid-xs-12">.grid-sm-12</div>
+          </div>
+      </div>
+
+      <div class="grid-xs-12 grid-sm-8">
+          <div class="grid-row">
+          
+              <div class="grid-xs-12 grid-sm-5 mb-20">.grid-sm-5</div>
+              <div class="grid-xs-12 grid-sm-7 mb-20">.grid-sm-7</div>
+              <div class="grid-xs-12 grid-sm-5 mb-20">.grid-sm-5</div>
+              <div class="grid-xs-12 grid-sm-7">.grid-sm-7</div>
+
+              <div class="grid-xs-12 grid-sm-12 two">
+                  <div class="grid-row">
+                      <div class="grid-xs-12 grid-sm-5">.grid-sm-5</div>
+                      <div class="grid-xs-12 grid-sm-7">
+                          <div class="grid-row">
+                              <div class="grid-xs-12 grid-sm-6">.grid-sm-6</div>
+                              <div class="grid-xs-12 grid-sm-6">.grid-sm-6</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+```
