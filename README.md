@@ -1,9 +1,9 @@
 # Grid Framework (Sass/Scss/Css)
 Simple grid layouts to get you familiar with building within the "SASS/SCSS GRID FRAMEWORK" grid system.
 
-## Grid Screen Size (-xs-sm-md-lg-xl)
+## Grid Media Screen Size (-xs-sm-md-lg-xl)
 
-| Screen Size        | < 424px          | < 768px         | < 1024px        | < 1279px        | < 1366px        |
+| Media Screen Size  | < 424px          | < 768px         | < 1024px        | < 1279px        | < 1366px        |
 | :----------------- |:----------------:|----------------:|----------------:|----------------:|----------------:|
 | 8.66667%           | grid-xs-1        | grid-sm-1       | grid-md-1       | grid-lg-1       | grid-xl-1       |
 | 16.66667%          | grid-xs-2        | grid-sm-2       | grid-md-2       | grid-lg-2       | grid-xl-2       |
