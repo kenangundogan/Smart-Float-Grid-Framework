@@ -30,7 +30,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholde
 
 .grid-row:after { clear: both; }
 
-.grid-xs-1, .grid-xs-2, .grid-xs-3, .grid-xs-4, .grid-xs-5, .grid-xs-6, .grid-xs-7, .grid-xs-8, .grid-xs-9, .grid-xs-10, .grid-xs-11, .grid-xs-12, .grid-sm-1, .grid-sm-2, .grid-sm-3, .grid-sm-4, .grid-sm-5, .grid-sm-6, .grid-sm-7, .grid-sm-8, .grid-sm-9, .grid-sm-10, .grid-sm-11, .grid-sm-12, .grid-md-1, .grid-md-2, .grid-md-3, .grid-md-4, .grid-md-5, .grid-md-6, .grid-md-7, .grid-md-8, .grid-md-9, .grid-md-10, .grid-md-11, .grid-md-12, .grid-mdl-1, .grid-mdl-2, .grid-mdl-3, .grid-mdl-4, .grid-mdl-5, .grid-mdl-6, .grid-mdl-7, .grid-mdl-8, .grid-mdl-9, .grid-mdl-10, .grid-mdl-11, .grid-mdl-12, .grid-lg-1, .grid-lg-2, .grid-lg-3, .grid-lg-4, .grid-lg-5, .grid-lg-6, .grid-lg-7, .grid-lg-8, .grid-lg-9, .grid-lg-10, .grid-lg-11, .grid-lg-12 { position: relative; padding-left: 10px; padding-right: 10px; }
+.grid-xs-1, .grid-xs-2, .grid-xs-3, .grid-xs-4, .grid-xs-5, .grid-xs-6, .grid-xs-7, .grid-xs-8, .grid-xs-9, .grid-xs-10, .grid-xs-11, .grid-xs-12, .grid-sm-1, .grid-sm-2, .grid-sm-3, .grid-sm-4, .grid-sm-5, .grid-sm-6, .grid-sm-7, .grid-sm-8, .grid-sm-9, .grid-sm-10, .grid-sm-11, .grid-sm-12, .grid-md-1, .grid-md-2, .grid-md-3, .grid-md-4, .grid-md-5, .grid-md-6, .grid-md-7, .grid-md-8, .grid-md-9, .grid-md-10, .grid-md-11, .grid-md-12, .grid-lg-1, .grid-lg-2, .grid-lg-3, .grid-lg-4, .grid-lg-5, .grid-lg-6, .grid-lg-7, .grid-lg-8, .grid-lg-9, .grid-lg-10, .grid-lg-11, .grid-lg-12, .grid-xl-1, .grid-xl-2, .grid-xl-3, .grid-xl-4, .grid-xl-5, .grid-xl-6, .grid-xl-7, .grid-xl-8, .grid-xl-9, .grid-xl-10, .grid-xl-11, .grid-xl-12 { position: relative; padding-left: 10px; padding-right: 10px; }
 
 .grid-xs-1 { width: 8.33333%; float: left; }
 
@@ -82,20 +82,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholde
   .grid-md-11 { width: 91.66667%; float: left; }
   .grid-md-12 { width: 100%; float: left; } }
 
-@media (min-width: 1279px) { .grid-mdl-1 { width: 8.33333%; float: left; }
-  .grid-mdl-2 { width: 16.66667%; float: left; }
-  .grid-mdl-3 { width: 25%; float: left; }
-  .grid-mdl-4 { width: 33.33333%; float: left; }
-  .grid-mdl-5 { width: 41.66667%; float: left; }
-  .grid-mdl-6 { width: 50%; float: left; }
-  .grid-mdl-7 { width: 58.33333%; float: left; }
-  .grid-mdl-8 { width: 66.66667%; float: left; }
-  .grid-mdl-9 { width: 75%; float: left; }
-  .grid-mdl-10 { width: 83.33333%; float: left; }
-  .grid-mdl-11 { width: 91.66667%; float: left; }
-  .grid-mdl-12 { width: 100%; float: left; } }
-
-@media (min-width: 1366px) { .grid-lg-1 { width: 8.33333%; float: left; }
+@media (min-width: 1279px) { .grid-lg-1 { width: 8.33333%; float: left; }
   .grid-lg-2 { width: 16.66667%; float: left; }
   .grid-lg-3 { width: 25%; float: left; }
   .grid-lg-4 { width: 33.33333%; float: left; }
@@ -107,6 +94,19 @@ input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholde
   .grid-lg-10 { width: 83.33333%; float: left; }
   .grid-lg-11 { width: 91.66667%; float: left; }
   .grid-lg-12 { width: 100%; float: left; } }
+
+@media (min-width: 1366px) { .grid-xl-1 { width: 8.33333%; float: left; }
+  .grid-xl-2 { width: 16.66667%; float: left; }
+  .grid-xl-3 { width: 25%; float: left; }
+  .grid-xl-4 { width: 33.33333%; float: left; }
+  .grid-xl-5 { width: 41.66667%; float: left; }
+  .grid-xl-6 { width: 50%; float: left; }
+  .grid-xl-7 { width: 58.33333%; float: left; }
+  .grid-xl-8 { width: 66.66667%; float: left; }
+  .grid-xl-9 { width: 75%; float: left; }
+  .grid-xl-10 { width: 83.33333%; float: left; }
+  .grid-xl-11 { width: 91.66667%; float: left; }
+  .grid-xl-12 { width: 100%; float: left; } }
 
 html { height: 100%; }
 
