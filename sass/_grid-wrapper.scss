@@ -1,7 +1,7 @@
-// Creates a wrapper for a series of columns
-@mixin make-row($gutter: $grid-gutter-width) {
-    margin-left: ceil(($gutter / -2));
-    margin-right: floor(($gutter / -2));
+// Creates a wrapper for a series of grid
+@mixin make-row($margin: $grid-margin-width) {
+    margin-left: ceil(($margin / -2));
+    margin-right: floor(($margin / -2));
     position: relative;
     &:after,
     &:before {
