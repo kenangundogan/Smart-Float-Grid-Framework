@@ -1,5 +1,5 @@
 # Grid Framework (Sass/Scss/Css)
-
+Simple grid layouts to get you familiar with building within the "SASS/SCSS GRID FRAMEWORK" grid system.
 
 ## Grid Screen Size (-xs-sm-md-lg-xl)
 
