@@ -85,6 +85,91 @@ Simple grid layouts to get you familiar with building within the "SASS/SCSS GRID
   </div>
 ```
 
+## Variable (SCSS)
+```javascript
+  $grid-name: "grid";
+
+  $grid-columns:               12 !default;
+  $grid-margin-width:          20px !default;
+
+  $screen-xs:                  424px !default;
+  $screen-sm:                  768px !default;
+  $screen-md:                  1024px !default;
+  $screen-lg:                  1279px !default;
+  $screen-xl:                  1366px !default;
+```
+
+## Grid Wrapper (SCSS)
+Creates a wrapper for a series of grid
+```javascript
+  @mixin make-row($margin: $grid-margin-width) {
+    margin-left: ceil(($margin / -2));
+    margin-right: floor(($margin / -2));
+    position: relative;
+    &:after,
+    &:before {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+  }
+
+  .grid-row{
+      @include make-row;
+  }
+```
+
+## Make Grid (SCSS)
+
+```javascript
+// grid property
+%grid-property {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+// grid array (type,size) list
+$grid-type-list: (xs, $screen-xs),(sm, $screen-sm),(md, $screen-md),(lg, $screen-lg),(xl, $screen-xl);
+
+
+// make grid all-size (default attribute)
+@each $item, $grid-type in $grid-type-list {
+    @for $i from 1 through $grid-columns {
+        .#{$grid-name}-#{$item}-#{$i} { @extend %grid-property; }
+    }
+}
+
+
+// make grid function
+@mixin make-grid($item){
+    @for $i from 1 through $grid-columns {
+        .#{$grid-name}-#{$item}-#{$i} {
+            width: (100% / $grid-columns) * $i;
+            float: left;
+        }
+    }
+}
+
+
+// make scren-size grid
+@each $item, $screen-size in $grid-type-list {
+    @if ($item!="xs") {
+        @media (min-width: $screen-size) {
+            @include make-grid($item);
+        }
+    }
+    @else{
+        @include make-grid($item);
+    }
+}
+
+```
+
+
 
 ## Browser support
 - Google Chrome (latest)
