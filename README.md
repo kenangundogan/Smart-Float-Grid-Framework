@@ -84,3 +84,14 @@ Simple grid layouts to get you familiar with building within the "SASS/SCSS GRID
       </div>
   </div>
 ```
+
+
+## Browser support
+⋅⋅* Google Chrome (latest)
+⋅⋅* Opera (latest)
+⋅⋅* Firefox (latest)
+⋅⋅* Safari 6.2+
+⋅⋅* Internet Explorer 8+
+⋅⋅* iOS 7+
+⋅⋅* Android 4.4+
+⋅⋅* Windows Phone 8.1+
