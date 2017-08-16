@@ -106,7 +106,7 @@ $grid-type-list: (xs, $screen-xs),(sm, $screen-sm),(md, $screen-md),(lg, $screen
 | 100% / 12 * 12     | grid-xs-12       | grid-sm-12      | grid-md-12      | grid-lg-12      | grid-xl-12      |
 
 
-## Example 1
+## Example 1 (Simple)
 
 ```javascript
   <div class="grid-row">
@@ -136,7 +136,7 @@ $grid-type-list: (xs, $screen-xs),(sm, $screen-sm),(md, $screen-md),(lg, $screen
   </div>
 ```
 
-## Example 3
+## Example 3 (complex)
 
 ```javascript
   <div class="grid-row">
