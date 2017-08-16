@@ -10,7 +10,7 @@
 $grid-type-list: (xs, $screen-xs),(sm, $screen-sm),(md, $screen-md),(lg, $screen-lg),(xl, $screen-xl);
 
 
-// make all-size grid
+// make all-size grid (default options)
 @each $item, $grid-type in $grid-type-list {
     @for $i from 1 through $grid-columns {
         .#{$grid-name}-#{$item}-#{$i} { @extend %grid-property; }
