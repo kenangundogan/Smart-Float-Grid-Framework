@@ -90,7 +90,7 @@ $grid-type-list: (xs, $screen-xs),(sm, $screen-sm),(md, $screen-md),(lg, $screen
 
 ## Grid Media Screen Size (-xs-sm-md-lg-xl)
 
-| Media Screen Size  |(min-width:424px)(xs)|(min-width:768px)(sm)|(min-width:1024px)(md)|(min-width:1279px)(lg)|(min-width:1366px)(xl)|
+| Media Screen Size  | < 424px          | < 768px         | < 1024px        | < 1279px        | < 1366px        |
 | :----------------- |:----------------:|----------------:|----------------:|----------------:|----------------:|
 | 100% / 12 * 1      | grid-xs-1        | grid-sm-1       | grid-md-1       | grid-lg-1       | grid-xl-1       |
 | 100% / 12 * 2      | grid-xs-2        | grid-sm-2       | grid-md-2       | grid-lg-2       | grid-xl-2       |
