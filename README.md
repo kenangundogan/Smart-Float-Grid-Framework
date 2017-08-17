@@ -1,4 +1,4 @@
-# Smart Grid Framework (Sass/Scss/Css)
+# Smart Grid Framework (Float) (Sass/Scss/Css)
 Simple grid layouts to get you familiar with building within the "SASS/SCSS GRID FRAMEWORK" grid system.
 
 
