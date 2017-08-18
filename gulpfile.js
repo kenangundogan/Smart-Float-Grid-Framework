@@ -2,7 +2,7 @@ var gulp             = require('gulp'),
     sass             = require('gulp-sass'),
     autoprefixer     = require('gulp-autoprefixer'),
     sourcemaps       = require('gulp-sourcemaps'),
-    minifyCss        = require('gulp-minify-css'),
+    cleanCss         = require('gulp-clean-css'),
     rename           = require('gulp-rename'),
     browserSync      = require('browser-sync').create();
 
@@ -10,7 +10,7 @@ var gulp             = require('gulp'),
 
 gulp.task('sass', function(){
     // sass directory
-    return gulp.src('./sass/*scss')
+    return gulp.src('./sass/style.scss')
             .pipe(sass())
             //outputstyle (nested, compact, expanded, compressed)
             .pipe(sass({outputStyle:'compact'}).on('error', sass.logError))
@@ -28,7 +28,7 @@ gulp.task('sass', function(){
 // minify css (merge + autoprefix + rename)
 gulp.task('minify-css', function(){
    return gulp.src('./css/style.css')
-            .pipe(minifyCss())
+            .pipe(cleanCss())
              // autoprefixer
             .pipe(autoprefixer({
                 browsers: ['last 15 versions'],
@@ -55,5 +55,5 @@ gulp.task('browser-sync', function(){
     gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
-// gulp default (sass, minify-css, browser-sync) method
+// gulp default (sass, gulp-clean-css, browser-sync) method
 gulp.task('default', ['sass', 'minify-css', 'browser-sync']);
